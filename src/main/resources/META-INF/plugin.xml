@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>icu.zheteng.plugin-demo02</id>
+    <name>demo02</name>
+    <vendor email="9987814@qq.com" url="https://www.zheteng.icu">none</vendor>
+
+    <description><![CDATA[Enter short description for your plugin here]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="icu.zheteng.tool.window.FirstToolWindowFactory"
+                    id="firstToolWindow" icon="AllIcons.Actions.Colors"/>
+
+        <!--BALLOON 通知-->
+        <notificationGroup id="Custom Notification Group" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
